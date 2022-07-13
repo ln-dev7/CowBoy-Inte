@@ -311,3 +311,57 @@ body {
     }
   }
 }
+
+.ride {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-center {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 100px 0;
+    gap: 40px;
+  }
+  &-title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    h1 {
+      text-align-last: left;
+      width: 100%;
+      font-weight: 500;
+      font-size: 4rem;
+      line-height: 80px;
+    }
+  }
+  &-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  &-image {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-radius: 30px;
+    background: url('./assets/image-2.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    padding: 60px 50px;
+
+    div{
+      h3{
+        font-weight: 400;
+        font-size: 2.7rem;
+      }
+      h3, p{
+        color: $white;
+      }
+    }
+  }
+}
